@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { getProducts, getCategories } from "@/lib/woocommerce";
 
+export const dynamic = "force-dynamic";
+
 interface PageProps {
   searchParams: Promise<{ category?: string }>;
 }
