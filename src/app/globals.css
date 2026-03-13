@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -14,9 +15,9 @@
   --color-primary: var(--primary);
   --color-card: var(--card);
   --color-border: var(--border);
-  
+
   --font-display: "Inter", sans-serif;
-  
+
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
 }
