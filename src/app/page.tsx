@@ -38,7 +38,7 @@ export default async function HomePage({ searchParams }: PageProps) {
           >
             Tout
           </Link>
-          {categories.map((category: any) => (
+          {categories.map((category: { id: number; name: string }) => (
             <Link
               key={category.id}
               href={`/?category=${category.id}`}
@@ -55,7 +55,7 @@ export default async function HomePage({ searchParams }: PageProps) {
 
       <main className="max-w-5xl mx-auto pb-24 px-4 pt-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product: any, index: number) => (
+          {products.map((product: { id: number; name: string; images: { src: string }[]; price: string; short_description: string; description: string; permalink: string }, index: number) => (
             <div key={product.id} className="flex flex-col gap-4 group">
               <div className="relative w-full aspect-[4/5] overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800">
                 <Image

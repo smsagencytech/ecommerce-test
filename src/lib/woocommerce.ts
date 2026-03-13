@@ -9,7 +9,7 @@ const api = new WooCommerceRestApi({
 
 export const getProducts = async (categoryId?: string) => {
     try {
-        const params: any = {
+        const params: Record<string, string | number> = {
             per_page: 20,
             status: "publish",
         };
